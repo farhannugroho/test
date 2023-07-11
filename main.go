@@ -11,17 +11,8 @@ type Response struct {
 	Message string `json:"message"`
 }
 
-func main() {
-	// Endpoint untuk API
-	http.HandleFunc("/api/hello", helloHandler)
-
-	// Menjalankan server di port 8080
-	log.Println("Server running on port 8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
-}
-
-// Handler untuk route /api/hello
-func helloHandler(w http.ResponseWriter, r *http.Request) {
+// Fungsi Handler yang diekspor
+func Handler(w http.ResponseWriter, r *http.Request) {
 	// Mengatur header response sebagai JSON
 	w.Header().Set("Content-Type", "application/json")
 
@@ -30,4 +21,13 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Mengirim response dalam format JSON
 	json.NewEncoder(w).Encode(response)
+}
+
+func main() {
+	// Endpoint untuk API
+	http.HandleFunc("/api/hello", Handler)
+
+	// Menjalankan server di port 8080
+	log.Println("Server running on port 8080")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
