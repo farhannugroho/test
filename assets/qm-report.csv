@@ -1,0 +1,4 @@
+
+	roundstart,roundend,roundid,ugsroundid,roundstatus,userid,username,playertype,riskamt,winamt,beforebal,postbal,cur,gameprovider,gameprvidercode,gamename,gameid,platformtype,ipaddress,turnover,validbet
+	2023-02-19T23:56:06+07:00,2023-02-19T23:56:26+07:00,bd-ieMg46SJ,024c1f8a-09a6-08db-8c78-ec06a609db08,Closed,M1100X4011,M1100X4011,1,15000.000000,0.000000,5000.000000,85038.000000,IDR,KingMaker QM,KMQM,Bonus Dice,bonus-dice,Desktop,185.213.83.138,15000.000000,15000.000000
+	2023-02-19T23:56:55+07:00,2023-02-19T23:57:06+07:00,bd-JNfVM4Z5,024c1f8a-09a6-08db-9278-ec06a609db08,Closed,M1100X4011,M1100X4011,1,15000.000000,30000.000000,90038.000000,70038.000000,IDR,KingMaker QM,KMQM,Bonus Dice,bonus-dice,Desktop,185.213.83.138,15000.000000,15000.000000
